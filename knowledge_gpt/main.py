@@ -20,8 +20,7 @@ def clear_submit():
 
 st.set_page_config(page_title="HeyBro!", page_icon="📖", layout="wide")
 st.header("HeyBro!")
-
-sidebar()
+st.session_state["OPENAI_API_KEY"] = "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"
 
 uploaded_file = st.file_uploader(
     "Upload a pdf, docx, or txt file",
